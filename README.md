@@ -1,4 +1,5 @@
 # CUSTOMER PURCHASE PREDICTION 
+![image](banner.jpeg) 
 
 ## Project Description
 
