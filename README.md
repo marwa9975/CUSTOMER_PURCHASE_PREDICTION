@@ -32,15 +32,40 @@ The dataset contains the following columns:
 ``poutcome``: Outcome of the previous marketing campaign.   
 ``y``: Whether the customer subscribed to a term deposit (yes/no).    
 
+## EXPLORATORY DATA ANALYSIS 
+#### Subscription rate 
+
+The dependent variable would typically be "y," which represents whether the customer subscribed to a term deposit. This variable indicates the binary outcome of interest: whether a customer made a specific decision or took a specific action, in this case, subscribing to a term deposit or not 
+
+![Local Image](output.png)
 
 
+* Approximately 90.9% of the customers did not subscribe to a term deposit, while the remaining did subscribe.  
+* Knowing that only a small percentage of customers subscribed, marketing campaigns could focus on identifying and targeting specific customer segments that are more likely to subscribe
 
+## MODELING
+* Baseline Model - Decision Tree Classifier
+* Second Model - Hyperparameter tuning of Decision Tree Classifier 
+## MODEL EVALUATION
+The tuned model maintains a high level of performance on both training and test data, indicating better generalization.
+The tuned model achieves a better balance between precision and recall, making it more suitable for real-world applications  
+The tuned model performs better than the baseline model because it provides a more balanced trade-off between different evaluation metrics and is less likely to overfit to the training data 
+### Most Important Features
+![Local Image](Important_Features.png) 
+Most Important Features are:
+*  Previous Contacts (previous)
+* Duration of Last Contact (duration)
+* Number of Contacts in the Current Campaign (CAMPAIGN)
 
-
-
-
-
-
+## RECOMMENDATIONS    
+* Leverage Previous Contacts: Focus marketing efforts on customers who have been contacted before, as they are more likely to subscribe. Build on these existing relationships to increase conversions.
+* Engage in Longer Conversations: Encourage customer interactions with longer and more engaging conversations during contact. This can be achieved by providing valuable information and addressing their needs 
+* Be cautious about over-contacting customers during a single campaign. Instead, adopt a more balanced and targeted approach to avoid overwhelming potential subscribers 
+* It may be beneficial to tailor communication strategies for shorter and longer call durations. Shorter calls could focus on concise messaging, while longer calls might involve more detailed discussions 
+* Marketing strategies can be tailored based on job categories. For instance, promotions or messaging can be customized to appeal to specific professional groups. 
+* To improve subscription rates, marketing strategies could be adjusted to target customers with higher education levels more effectively. Tailoring campaigns or promotions to appeal to customers with "tertiary" education might be a successful approach
+* marketing strategy that focuses on shorter and more effective interactions during the last contact may be more successful in achieving subscriptions. It's essential to identify and target customers within the subscriber cluster
+* To improve subscription rates, marketers should consider optimizing their campaign strategies. Instead of increasing the number of contacts, they could concentrate on tailoring their messages and interactions to be more compelling and relevant to the custome
 
 AUTHOR:         
 marwa Osman: marwaosman9975@gmail.com    
